@@ -1,58 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeteria</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    body{
-        background-color: #c0bfbf;
-    }
-    #coffee-imagem{
-        top: 110px;
-        left: 50px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        width: 600px;
-       
-        img{
-            position: absolute;
-            top: -60px;
-            left: 100px;
-            width: 400px;
-        }
-        p{
-            font-size: 8em;
-            font-weight: 600;
-        }
-    }
-</style>
 <body>
     <header>
-        
+        <div id="conteinerHeader">
+         <div class="logo"><img src="imagens/ChatGPT Image 28 de jun. de 2026, 16_44_36.png" alt=""><h1>Coffee</h1></div>
+        <nav>
+            <ul>
+                <li>Menu</li>
+                <li>Favoritos</li>
+                <li>Sobre Nós</li>
+                <li id="destaqueNav">Pedir Agora</li>
+               
+            </ul>
+        </nav>
+    </div>
+       
     </header>
-    <section>
-        <div id="coffee-imagem">
-            <p>
-                COFFEE <br>
-                COFFEE <BR>
-                COFFEE    
-                
-            </p>
-            <img src="imagens/images/ChatGPT Image 21 de jun. de 2026, 17_40_06.png" alt="">
-
-        </div>
-          
-
-    </section>
-  
+    <main>
+        <section id="homeConteiner">
+            <div id="home">
+            <div id="homeContent">
+               <h1>The Black</h1>
+                <h2>Coffee</h2>
+                <img src="imagens/coffee.png" alt="">
+                <p id="principal">O verdadeiro sabor de café artesanal.</p>
+                <p>Desfrute do verdadeiro sabor do café, preparado com grãos cuidadosamente selecionados e acompanhado de deliciosas opções feitas para tornar cada momento especial.</p>
+                <button>Conhecer Menu</button>
+            </div>
+            <div id="homeImage">
+                <img src="imagens/images/ChatGPT Image 21 de jun. de 2026, 17_40_06.png" alt="">
+            </div>
+            </div>
+        </section>
+    </main>
+    
 </body>
 </html>

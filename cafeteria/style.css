@@ -1,0 +1,193 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(#fff,#ebdfcf );
+}
+
+header{
+   height:80px;
+    width: 100;
+    display: flex;
+    justify-content: center;
+
+    #conteinerHeader{
+          height: 100%;
+        max-width: 1400px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+       
+        .logo{
+              height: 100%;
+             margin-left: 20px;
+             display: flex;
+              align-items: center;
+            img{
+            width:80px;
+
+        }
+        h1{
+            text-transform: uppercase;
+
+        }
+        }
+        nav{
+           
+            font-size: 1.1em;
+            height: 100%;
+            margin-right: 20px;
+            ul{
+                 height: 100%;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                list-style: none;
+                li{
+                     position: relative;
+                    cursor: pointer;
+                   &&::before{
+                        content: "";
+                        height: 2px;
+                        width: 0px;
+                        background-color: #C89B5A;
+                        display: inline-block;
+                        position: absolute;
+                        bottom:0;
+                        transition: all 0.3s ease-in-out;
+                     }   
+                     &&:hover::before{
+                          width: 100%;
+                        
+                    }
+                }
+                #destaqueNav{
+                    color: #C89B5A;
+                }
+            }
+        }
+        
+    }
+}
+
+main{
+
+}
+#homeConteiner{
+ max-width: 1400px;
+        width: 100vw;
+          margin: auto;
+         
+}
+#home{
+    width: 100%;
+
+      
+    
+    
+    display: flex;
+    justify-content: space-between;
+
+    #homeContent{
+    
+       
+        display: flex;
+         margin-left: 50px;
+         gap: 0px;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        &&::before{
+            content: "";
+            position: absolute;
+             top:413px;
+            display: inline-block;
+            width: 220px;
+            height: 2px;
+            background-color: #C89B5A;
+
+        }
+        &&::after{
+             content: "";
+            position: absolute;
+            top:413px;
+            right:  0px;
+            display: inline-block;
+            width: 100%;
+            max-width: 220px;
+            height: 2px;
+            background-color: #C89B5A;
+
+        }
+        
+        h1{
+              font-family: Yellowtail , sans-serif;
+              font-weight: 100;
+              color:  #C89B5A;
+                font-size: 3em;
+        }
+        h2{
+            font-family: ultra;
+            font-size: 5em;
+            text-transform: uppercase;
+              letter-spacing: 15px;
+        }
+        img{
+            width: 30px;
+            align-self: center;
+        }
+        #principal{
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+        p{
+            text-align: justify;
+           
+            max-width: 500px;
+
+            margin-top: 40px;
+            font-weight: 500;
+        }
+        button{
+            height: 40px;
+            width: 250px;
+            margin-top: 40px;
+            border-radius: 8px;
+            border: none;
+            background-color: #975f11;
+            color: #fff;
+            font-size: 0.9em;
+        }
+    }
+    #homeImage{
+     
+        margin-right: 50px;
+        position: relative;
+        top:-50px;
+          &&::after{
+                content: "";
+                z-index: -1;
+                display: inline-block;
+                width: 550px;
+                height: 550px;
+                background-color: #321B00;
+                position: absolute;
+                top: 210px;
+                right: 10px;
+                border-radius: 350px;
+
+              
+            }
+        img{
+            width: 600px;
+          
+          
+        }
+    }
+
+}
